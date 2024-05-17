@@ -101,7 +101,6 @@ function Page1() {
 
   return (
     <div className=" space-y-4 bg-[#F8F8FD]">
-          <Header  />
             <Title/>
             <Company/>
       <div className="header">
@@ -246,7 +245,6 @@ function Page1() {
         />
       </div>
       
-      <Recommandationjobs {...recommandationData} />
     </div>
   );
 }
