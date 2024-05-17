@@ -22,7 +22,7 @@ const Recommandationjobs: React.FC<RecommandationJobsProps> = ({ logo, name, tex
                         <img src={logo} alt="" />
                     </div>
                     <div className="flex items-center justify-center w-auto h-auto px-3 py-1  bg-[#F8F8FD] ">
-                        <p className="text-base text-center text-primary">3 Jobs</p>
+                        <p className="text-base text-center text-primary">7 Jobs</p>
                     </div>
                 </div>
                 <p className="mt-4 text-lg font-semibold text-title"> {name} </p>
