@@ -6,17 +6,18 @@ import Button from "./button"
     'name': string,
     'subtitle1': string,
     'subtitle2':string,
+    'logo' : string
 } 
 
 
-const Jobs:React.FC<JobsProps> = ( {name,subtitle1,subtitle2} ) => {
+const Jobs:React.FC<JobsProps> = ( {name,subtitle1,subtitle2,logo} ) => {
   return (
     <> 
        <div className="w-auto max-w-[620px] h-[149px] bg-white p-6 flex space-x-[351px] border border-stroke">
             <div className="flex">
 
                 <div className="">
-                    <img src="../src/assets/images/Company-Logo.png" alt="" className="" />
+                    <img src={logo} alt="" className="" />
                 </div>
 
                 <div className="flex flex-col space-y-2">

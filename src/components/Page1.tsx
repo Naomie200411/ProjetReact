@@ -23,18 +23,18 @@ function Page1() {
   const featuredjobs2: FeaturedJobs = {
     logo: '../src/assets/images/Dropbox.svg',
     name: 'Brand Designer',
-    subtitle1: 'Revolut',
-    subtitle2: 'Madrid, Spain',
-    text: 'Revolut is looking for Email Marketing to help team ma ...',
+    subtitle1: 'Dropbox',
+    subtitle2: 'San Francisco, US',
+    text: 'Dropbox is looking for Brand Designer to help the team t...',
     button1: 'Marketing',
     button2: 'Design'
   };
   const featuredjobs3: FeaturedJobs = {
     logo: '../src/assets/images/Company Logo.svg',
     name: 'Email Marketing',
-    subtitle1: 'Revolut',
-    subtitle2: 'Madrid, Spain',
-    text: 'Revolut is looking for Email Marketing to help team ma ...',
+    subtitle1: 'Pitch',
+    subtitle2: 'Berlin, Germany',
+    text: 'Pitch is looking for Custumer Manager to join marketing t... ',
     button1: 'Marketing',
     button2: 'Design'
   };
@@ -42,45 +42,45 @@ function Page1() {
   const featuredjobs4: FeaturedJobs = {
     logo: '../src/assets/images/Headers.svg',
     name: 'Visual Designer',
-    subtitle1: 'Revolut',
-    subtitle2: 'Madrid, Spain',
-    text: 'Revolut is looking for Email Marketing to help team ma ...',
+    subtitle1: 'Blinklist',
+    subtitle2: 'Granada, Spain',
+    text: 'Blinklist is looking for Visual Designer to help team desi...',
     button1: 'Marketing',
     button2: 'Design'
   };
   const featuredjobs5: FeaturedJobs = {
     logo: '../src/assets/images/designer.svg',
     name: 'Product Designer',
-    subtitle1: 'Revolut',
-    subtitle2: 'Madrid, Spain',
-    text: 'Revolut is looking for Email Marketing to help team ma ...',
+    subtitle1: 'ClassPass',
+    subtitle2: 'Manchester, UK',
+    text: 'ClassPass is looking for Product Designer to help us...',
     button1: 'Marketing',
     button2: 'Design'
   };
   const featuredjobs6: FeaturedJobs = {
     logo: '../src/assets/images/product.svg',
     name: 'Lead Designer',
-    subtitle1: 'Revolut',
-    subtitle2: 'Madrid, Spain',
-    text: 'Revolut is looking for Email Marketing to help team ma ...',
+    subtitle1: 'Canva',
+    subtitle2: 'Ontario, Canada',
+    text: 'Canva is looking for Lead Engineer to help develop n...',
     button1: 'Marketing',
     button2: 'Design'
   };
   const featuredjobs7: FeaturedJobs = {
     logo: '../src/assets/images/strategist.svg',
     name: 'Brand Strategist',
-    subtitle1: 'Revolut',
-    subtitle2: 'Madrid, Spain',
-    text: 'Revolut is looking for Email Marketing to help team ma ...',
+    subtitle1: 'GoDaddy',
+    subtitle2: 'Marseille, France',
+    text: 'GoDaddy is looking for Brand Strategist to join the team',
     button1: 'Marketing',
     button2: 'Design'
   };
   const featuredjobs8: FeaturedJobs = {
     logo: '../src/assets/images/analyst.svg',
     name: 'Data Analyst',
-    subtitle1: 'Revolut',
-    subtitle2: 'Madrid, Spain',
-    text: 'Revolut is looking for Email Marketing to help team ma ...',
+    subtitle1: 'Twitter',
+    subtitle2: 'San Diego, US',
+    text: 'Twitter is looking for Data Analyst to help team desi...',
     button1: 'Marketing',
     button2: 'Design'
   };
@@ -186,41 +186,56 @@ function Page1() {
           name="Social Media Assistant"
           subtitle1="Nomad"
           subtitle2="Paris, France"
+          logo='../src/assets/images/Company-Logo.png'
         />
         <Jobs
           name="Social Media Assistant"
-          subtitle1="Nomad"
+          subtitle1="Netlify"
           subtitle2="Paris, France"
+          logo='../src/assets/images/social_media.png'
+
         />
         <Jobs
-          name="Social Media Assistant"
-          subtitle1="Nomad"
-          subtitle2="Paris, France"
+          name="Brand Designer"
+          subtitle1="Dropbox"
+          subtitle2="San Francisco, USA"
+          logo='../src/assets/images/Dropbox.svg'
+
         />
         <Jobs
-          name="Social Media Assistant"
-          subtitle1="Nomad"
-          subtitle2="Paris, France"
+          name="Brand Designer"
+          subtitle1="Maze"
+          subtitle2="San Francisco, USA"
+          logo='../src/assets/images/brand_designer.png'
+
         />
         <Jobs
-          name="Social Media Assistant"
-          subtitle1="Nomad"
-          subtitle2="Paris, France"
+          name="Interactive Developper"
+          subtitle1="Terraform"
+          subtitle2="Hamburg, Germany"
+          logo='../src/assets/images/Company Logo.png'
+
         />
         <Jobs
-          name="Social Media Assistant"
-          subtitle1="Nomad"
-          subtitle2="Paris, France"
+          name="Interactive Developper"
+          subtitle1="Udacity"
+          subtitle2="Hamburg, Germany"
+          logo='../src/assets/images/interactive.png'
+
         />
         <Jobs
-          name="Social Media Assistant"
-          subtitle1="Nomad"
-          subtitle2="Paris, France"
+          name="HR Manager"
+          subtitle1="Packer"
+          subtitle2="Lucern, Switzerland"
+          logo='../src/assets/images/hr_manager.png'
+
         />
         <Jobs
-          name="Social Media Assistant"
-          subtitle1="Nomad"
-          subtitle2="Paris, France"
+          name="HR Manager"
+          subtitle1="Webflow"
+          subtitle2="Lucern, Switzerland"
+          logo='../src/assets/images/manager.png'
+
         />
       </div>
       

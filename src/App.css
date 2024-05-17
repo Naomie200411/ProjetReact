@@ -43,6 +43,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px; /* Ajustez cet espace selon vos besoins */
   }
+
+  .showing{
+    font-size: 13px;
+    opacity: 0.5;
+  }
   
   
   

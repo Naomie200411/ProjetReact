@@ -8,19 +8,20 @@ import Button from "./button"
     'subtitle2':string,
     'width' : string,
     'applied' : string,
-    'capacity' : string
+    'capacity' : string,
+    'logo' : string
 } 
 
 
 
-const SocialJobs:React.FC<SocialJobsProps> = ( {name,subtitle1,subtitle2,width,applied,capacity} ) => {
+const SocialJobs:React.FC<SocialJobsProps> = ( {name,subtitle1,subtitle2,width,applied,capacity,logo} ) => {
   return (
     <> 
-       <div className="w-auto max-w-[900px] h-[149px] bg-white p-6 flex space-x-[351px] border border-stroke">
+       <div className="w-auto max-w-[2000px] h-[149px] bg-white p-6 flex space-x-[351px] border border-stroke">
             <div className="flex">
 
                 <div className="">
-                    <img src="../src/assets/images/Company-Logo.png" alt="" className="" />
+                    <img src={logo} alt="" className="" />
                 </div>
 
                 <div className="flex flex-col space-y-2">
