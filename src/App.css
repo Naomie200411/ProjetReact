@@ -1,0 +1,48 @@
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px; /* Ajustez cet espace selon vos besoins */
+  }
+
+  .explore{
+    font-weight: bold;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .category{
+    font-weight: bold;
+    color: blue;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .show-all-jobs {
+    margin-left: 750px;
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .arrow-icon{
+    color: blue;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 50px;
+
+  }
+  .category-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; /* Ajustez cet espace selon vos besoins */
+  }
+  
+  
+  

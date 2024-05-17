@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon {
+    color: #4640DE;
+}
+
+.group:hover .icon {
+    color: white;
+}
+
+.group:focus .icon {
+    color: white;
+}
+
+.arrow {
+    color: #25324B;
+}
+
+.group:hover .arrow {
+    color: white;
+}
+
+.group:focus .arrow {
+    color: white;
+}
+
+.custom-div {
+    position: relative;
+    width: auto;
+    height: 640px; 
+    background: linear-gradient(135deg, transparent 60px, #4640DE 0) top left,
+                linear-gradient(330deg, transparent 60px, #4640DE 0) bottom right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+  }
+  
