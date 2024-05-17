@@ -12,6 +12,8 @@ import { Icon } from '@iconify/react';
 import Header from './header';
 import Title from './title';
 import Company from './company'
+import HeroSection from './HeroSection';
+
 
 function Page1() {
   const featuredjobs1: FeaturedJobs = {
@@ -101,7 +103,7 @@ function Page1() {
 
   return (
     <div className=" space-y-4 bg-[#F8F8FD]">
-            <Title/>
+            <HeroSection/>
             <Company/>
       <div className="header">
         <div className='p-10'>
