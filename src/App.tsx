@@ -18,7 +18,10 @@ const App: React.FC = () => {
     };
 
     return (
-        <Page1/>
+        <div>
+            <Header setCurrentPage={setCurrentPage} />
+            {renderPage()}
+        </div>
     );
 };
 
