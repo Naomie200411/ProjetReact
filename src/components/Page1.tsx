@@ -9,6 +9,9 @@ import { FeaturedJobs } from '../interfaces/featuresProps';
 import { RecommandationProps } from '../interfaces/recommandationProps';
 import '../App.css';
 import { Icon } from '@iconify/react';
+import Header from './header';
+import Title from './title';
+import Company from './company'
 
 function Page1() {
   const featuredjobs1: FeaturedJobs = {
@@ -97,15 +100,18 @@ function Page1() {
   };
 
   return (
-    <div className="p-10 space-y-4">
+    <div className=" space-y-4 bg-[#F8F8FD]">
+          <Header  />
+            <Title/>
+            <Company/>
       <div className="header">
-        <div>
+        <div className='p-10'>
           <span className="explore">Explore by</span>
           <span className="category"> Category</span>
         </div>
         <a href="#" className="show-all-jobs">Show all jobs <Icon icon="formkit:arrowright" className='arrow-icon' /> </a>
       </div>
-      <div className="category-grid ">
+      <div className="category-grid p-10">
         <Category icon="material-symbols-light:design-services-outline" categoryName="Design" jobsNumber={235} />
         <Category icon="mynaui:chart-bar" categoryName="Sales" jobsNumber={756} />
         <Category icon="octicon:megaphone-24" categoryName="Marketing" jobsNumber={140} />
@@ -116,12 +122,13 @@ function Page1() {
         <Category icon="mdi:people-group" categoryName="Human Ressource" jobsNumber={346} />
       </div>
       <br />
-      <PostJobs />
-      <div className="header">
+      <div className='p-10'>   <PostJobs /></div>
+    
+      <div className="header p-10">
         <span className="explore">Featured <span className="category">Jobs</span></span>
         <a href="#" className="show-all-jobs">Show all jobs <Icon icon="formkit:arrowright" className='arrow-icon' /> </a>
       </div>
-      <div className="category-grid">
+      <div className="category-grid p-10" >
         <Featuredjobs
           job={featuredjobs1}
           buttons={[
@@ -177,11 +184,11 @@ function Page1() {
           ]}
         />
       </div>
-      <div className="header mt-8 mb-8">
+      <div className="header mt-8 mb-8 p-10">
         <span className="explore">Latest <span className="category">Jobs open</span></span>
         <a href="#" className="show-all-jobs">Show all jobs <Icon icon="formkit:arrowright" className='arrow-icon' /> </a>
       </div>
-      <div className="category-grid2 ">
+      <div className="category-grid2 p-10">
         <Jobs
           name="Social Media Assistant"
           subtitle1="Nomad"
