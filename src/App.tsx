@@ -20,10 +20,7 @@ const App: React.FC = () => {
     };
 
     return (
-        <div>
-            <Paginate setCurrentPage={setCurrentPage} />
-            {renderPage()}
-        </div>
+        <Page1/>
     );
 };
 
