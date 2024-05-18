@@ -1,209 +1,160 @@
 import React from 'react';
+import Category from './category';
+import Featuredjobs1 from './featuredjobs1';
 import Filter from './filter';
-import SocialJobs from './SocialJobs';
+import Jobs from './jobs';
+import Recommandationjobs from './recommandation';
+import PostJobs from './PostJobs';
+import { FeaturedJobs1 } from '../interfaces/featuresProps1';
+import { RecommandationProps } from '../interfaces/recommandationProps';
+import '../App.css';
 import { Icon } from '@iconify/react';
-import Paginate from './Paginate';
-import Featuredjobs from './featuredjobs';
-import { FeaturedJobs } from '../interfaces/featuresProps';
-import Recommandationjobs from './recommandation';import { RecommandationProps } from '../interfaces/recommandationProps';
+import Header from './header';
+import Title from './title';
+import Company_Categorie from './company_categorie'
+import HeroSection1 from './HeroSection1';
+import Resultat from './resultats';
 
 
 
+function Page1() {
+  const featuredjobs1: FeaturedJobs1 = {
+    logo: '../src/assets/images/EmailMarketing.svg',
+    name: 'Nomad',
+    
+    text: 'Nomad is located in Paris, France. Nomad has generates $728,000 in sales (USD).',
+    button1: 'Business Service',
+  };
+  const featuredjobs2: FeaturedJobs1 = {
+    logo: '../src/assets/images/Dropbox.svg',
+    name: 'Discord',
+    text: "We'd love to work with someone like you. We care about creating a delightful experience.",
+    button1: 'Business Service',
+  };
+  const featuredjobs3: FeaturedJobs1 = {
+    logo: '../src/assets/images/Company Logo.svg',
+    name: 'Maze',
+   
+    text: "We're a passionate bunch working from all over the world to build the future of rapid testing together. ",
+    button1: 'Business Service',
+  };
+
+  const featuredjobs4: FeaturedJobs1 = {
+    logo: '../src/assets/images/Headers.svg',
+    name: 'Udacity',
+  
+    text: "Udacity is a new type of online university that teaches the actual programming skills.",
+    button1: 'Business Service',
+
+  };
+  const featuredjobs5: FeaturedJobs1 = {
+    logo: '../src/assets/images/designer.svg',
+    name: 'Webflow',
+   
+    text: "Webflow is the first design and hosting platform built from the ground up for the mobile age.",
+    button1: 'Marketing',
+  };
+  const featuredjobs6: FeaturedJobs1 = {
+    logo: '../src/assets/images/product.svg',
+    name: 'Foundation',
+  
+    text: "Foundation helps creators mint and auction their digital artworks as NFTs on the Ethereum blockchain.",
+    button1: 'Business Service',
+  };
+  
 
 
-interface Page2Props {
-    setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
-}
+ 
 
-const Page3: React.FC<Page2Props> = ({ setCurrentPage }) => {
-    const recommandationJob1 = {
-        logo: '../src/assets/images/stripe.png',
-        name: 'Stripe',
-        text: 'Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe’s software tools...',
-        buttons: [
-            { bgColor: 'redLight', textColor: 'yellow', label: 'Businss' },
-            { bgColor: 'greenlight', textColor: 'green', label: 'Payment gateway' }
-        ]
-    };
-    const recommandationJob2 = {
-        logo: '../src/assets/images/truebill.png',
-        name: 'TrueBill',
-        text: 'Take control of your money. Truebill develops a mobile app that helps consumers take control of their financial...',
-        buttons: [
-            { bgColor: 'greenlight', textColor: 'green', label: 'Business' },
-        ]
-    };
-    const recommandationJob3 = {
-        logo: '../src/assets/images/square.png',
-        name: 'Square',
-        text: 'Square builds common business tools in unconventional ways so more people can start, run, and grow their businesses.',
-        buttons: [
-            { bgColor: 'greenlight', textColor: 'green', label: 'Business' },
-            { bgColor: 'greenlight', textColor: 'green', label: 'Blockchhain' }
-
-        ]
-    };
-    const recommandationJob4 = {
-        logo: '../src/assets/images/coinbase.png',
-        name: 'Coinbase',
-        text: 'Coinbase is a digital currency wallet and platform where merchants and consumers can transact with new digital currencies.',
-        buttons: [
-            { bgColor: 'greenlight', textColor: 'green', label: 'Business' },
-            { bgColor: 'greenlight', textColor: 'green', label: 'Blockchhain' }
-
-        ]
-    };
-    const recommandationJob5 = {
-        logo: '../src/assets/images/robinhood.png',
-        name: 'Robinhood',
-        text: 'Robinhood is lowering barriers, removing fees, and providing greater access to financial information.',
-        buttons: [
-            { bgColor: 'greenlight', textColor: 'green', label: 'Business' },
-
-        ]
-    };
-    const recommandationJob6 = {
-        logo: '../src/assets/images/kraken.png',
-        name: 'Kraken',
-        text: 'Based in San Francisco, Kraken is the world’s largest global bitcoin exchange in euro volume and liquidity.',
-        buttons: [
-            { bgColor: 'greenlight', textColor: 'green', label: 'Business' },
-            { bgColor: 'greenlight', textColor: 'green', label: 'Blockchhain' }
-
-
-        ]
-    };
-    const recommandationJob7 = {
-        logo: '../src/assets/images/EmailMarketing.svg',
-        name: 'Revolut',
-        text: 'When Revolut was founded in 2015, we had a vision to build a sustainable, digital alternative to traditional big banks.',
-        buttons: [
-            { bgColor: 'greenlight', textColor: 'green', label: 'Business' },
-            { bgColor: 'greenlight', textColor: 'green', label: 'Blockchhain' }
-
-
-        ]
-    };
-    const recommandationJob8 = {
-        logo: '../src/assets/images/divvy.png',
-        name: 'Divvy',
-        text: 'Divvy is a secure financial platform for businesses to manage payments and subscriptions.',
-        buttons: [
-            { bgColor: 'greenlight', textColor: 'green', label: 'Business' },
-            { bgColor: 'greenlight', textColor: 'green', label: 'Blockchhain' }
-
-
-        ]
-    };
-
-
-    return (
-        <div className="p-10 flex justify-end space-y-4">
-            <div className="flex-shrink-0 ml-0 flex flex-col space-y-4 p-11">
-                <Filter
-                    labelText="Industry"
-                    filterTypes={[
-                        { label: 'Advertising', count: 43 },
-                        { label: 'Business Service', count: 4 },
-                        { label: 'Blockchain', count: 5 },
-                        { label: 'ConsumerTech', count: 5 },
-                        { label: 'Education', count: 34 },
-                        { label: 'Fintech', count: 45 },
-                        { label: 'Gaming', count: 33 },
-                        { label: 'Food et Beverage', count: 5 },
-                        { label: 'Healthcare', count: 3 },
-                        { label: 'Hostinng', count: 5 },
-                        { label: 'Media', count: 4 },
-
-
-
-                    ]}
-                />
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <br /><br />  
-                <Filter
-                    labelText="Company Size"
-                    filterTypes={[
-                        { label: '1-50', count: 25 },
-                        { label: '51-150', count: 57 },
-                        { label: '151-250', count: 45 },
-                        { label: '251-500', count: 4 },
-                        { label: '501-1000', count: 43 },
-                        { label: '1000-above', count: 23 }
-
-                    ]}
-                />
-              
-            </div>
-            <div className="p-10 space-y-4 ml-auto">
-                <div className="flex justify-between items-center">
-                    <span className="font-bold text-3xl italic cursive-font mr-[400px]">All jobs</span>
-                    <div className="flex items-center space-x-4">
-                        <span className="showing">Sort by. <span className="font-bold">Most relevant v</span></span>
-                        <img src="../src/assets/images/View.png" alt="View icon" />
-                        <img src="../src/assets/images/Icon.png" alt="Icon" />
-                    </div>
-                </div>
-                <span className="showing">Showing 73 results</span>
-                <div className="category-grid2 p-5">
-                    <Recommandationjobs
-                        logo={recommandationJob1.logo}
-                        name={recommandationJob1.name}
-                        text={recommandationJob1.text}
-                        buttons={recommandationJob1.buttons}
-                    />
-                    <Recommandationjobs
-                        logo={recommandationJob2.logo}
-                        name={recommandationJob2.name}
-                        text={recommandationJob2.text}
-                        buttons={recommandationJob2.buttons}
-                    />
-                     <Recommandationjobs
-                        logo={recommandationJob3.logo}
-                        name={recommandationJob3.name}
-                        text={recommandationJob3.text}
-                        buttons={recommandationJob3.buttons}
-                    />
-                     <Recommandationjobs
-                        logo={recommandationJob4.logo}
-                        name={recommandationJob4.name}
-                        text={recommandationJob4.text}
-                        buttons={recommandationJob4.buttons}
-                    />
-                     <Recommandationjobs
-                        logo={recommandationJob5.logo}
-                        name={recommandationJob5.name}
-                        text={recommandationJob5.text}
-                        buttons={recommandationJob5.buttons}
-                    />
-                     <Recommandationjobs
-                        logo={recommandationJob6.logo}
-                        name={recommandationJob6.name}
-                        text={recommandationJob6.text}
-                        buttons={recommandationJob6.buttons}
-                    />
-                    <Recommandationjobs
-                        logo={recommandationJob7.logo}
-                        name={recommandationJob7.name}
-                        text={recommandationJob7.text}
-                        buttons={recommandationJob7.buttons}
-                    />
-                    <Recommandationjobs
-                        logo={recommandationJob8.logo}
-                        name={recommandationJob8.name}
-                        text={recommandationJob8.text}
-                        buttons={recommandationJob8.buttons}
-                    />
-                </div>
-                <Paginate setCurrentPage={setCurrentPage} />
-            </div>
+  return (
+    <div className=" space-y-4 bg-[#F8F8FD]">
+            <HeroSection1/>
+      <div className="header">
+        <div className='p-10'>
+          <span className="explore">Companies by</span>
+          <span className="category"> Category</span>
         </div>
-    );
+      </div>
+      <div className="  flex flex-row">
+        <Company_Categorie icon="material-symbols-light:design-services-outline" companyName="Design"  />
+        <Company_Categorie icon="mynaui:chart-bar" companyName="Sales"  />
+        <Company_Categorie icon="octicon:megaphone-24" companyName="Marketing"  />
+        <Company_Categorie icon="arcticons:finance-manager" companyName="Finance"  />
+        <Company_Categorie icon="arcticons:emoji-desktop-computer" companyName="Technology"  />
+        <Company_Categorie icon="ph:code-light" companyName="Technology"  />
+       
+      </div>
+      <br />
+
+      <div className="header">
+        <div className='p-10'>
+            <img className="category" src="../src/assets/images/material-symbols-light:design-services-outline" alt="" />
+          <span className="explore">24 Result</span>
+
+        </div>
+      </div>
+      <div className="grid grid-cols-4">
+        <Resultat image="../src/assets/images/Company Logo1.svg" ResultName="Design" job="3 Jobs"  />
+        <Resultat image="../src/assets/images/Company Logo2.svg" ResultName="Sales"  job="3 Jobs" />
+        <Resultat image="../src/assets/images/Company Logo3.svg" ResultName="Marketing"  job="3 Jobs"/>
+        <Resultat image="../src/assets/images/Company Logo4.svg" ResultName="Finance"  job="3 Jobs" />
+        <Resultat image="../src/assets/images/Company Logo5.svg" ResultName="Technology"  job="3 Jobs" />
+        <Resultat image="../src/assets/images/Company Logo8.svg" ResultName="Technology"  job="3 Jobs" />
+        <Resultat image="../src/assets/images/dBymBmGq_400x400.svg" ResultName="Technology"  job="3 Jobs" />
+        <Resultat image="../src/assets/images/Mask Group.svg" ResultName="Technology"  job="3 Jobs" />
+
+      </div>
+      <div className='p-10'>   <PostJobs /></div>
+    
+      <div className="header p-10">
+        <span className="explore">Featured <span className="category">Jobs</span></span>
+        <a href="#" className="show-all-jobs">Show all jobs <Icon icon="formkit:arrowright" className='arrow-icon' /> </a>
+      </div>
+      <div className="grid grid-cols-3  gap-6 p-10" >
+        <Featuredjobs1
+          job={featuredjobs1}
+          buttons={[
+            { bgColor: 'redLight', textColor: 'yellow', label: 'Marketing' },
+          ]}
+        />
+        <Featuredjobs1
+          job={featuredjobs2}
+          buttons={[
+            { bgColor: 'greenlight', textColor: 'green', label: 'Design' },
+          ]}
+        />
+        <Featuredjobs1
+          job={featuredjobs3}
+          buttons={[
+            { bgColor: 'greenlight', textColor: 'yellow', label: 'Marketing' }
+            
+          ]}
+        />
+        <Featuredjobs1
+          job={featuredjobs4}
+          buttons={[
+            { bgColor: 'greenlight', textColor: 'green', label: 'Design' }
+          ]}
+        />
+        <Featuredjobs1
+          job={featuredjobs5}
+          buttons={[
+            { bgColor: 'greenlight', textColor: 'yellow', label: 'Marketing' },
+            { bgColor: 'redlight', textColor: 'blue', label: 'Design' },
+          ]}
+        />
+        <Featuredjobs1
+          job={featuredjobs6}
+          buttons={[
+            { bgColor: 'greenlight', textColor: 'green', label: 'Design' },
+            { bgColor: 'redlight', textColor: 'red', label: 'Business' },
+          ]}
+        />
+        
+      </div>
+     
+    </div>
+  );
 }
 
-export default Page3;
-
-
-
-
-
+export default Page1;

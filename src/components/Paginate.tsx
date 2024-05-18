@@ -40,9 +40,15 @@ const Paginate: React.FC<PaginateProps> = ({ setCurrentPage }) => {
                     dimension={{ width: "36px", height: "36px", borderRadius: "4px"}} 
                 />
             </button>
-            <button onClick={() => setCurrentPage('Page3')} className="">
+            <button onClick={() => setCurrentPage('Page4')} className="">
                 <ButtonPaginate 
                     name={"3"} 
+                    dimension={{ width: "36px", height: "36px", borderRadius: "4px"}} 
+                />
+            </button>
+            <button onClick={() => setCurrentPage('Page3')} className="">
+                <ButtonPaginate 
+                    name={"4"} 
                     dimension={{ width: "36px", height: "36px", borderRadius: "4px"}} 
                 />
             </button>
